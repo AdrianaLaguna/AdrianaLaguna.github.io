@@ -29,6 +29,7 @@ loadingManager.onLoad = function(){
 }
 
 const renderer = new THREE.WebGLRenderer({ canvas: document.querySelector("canvas") });
+renderer.setPixelRatio(window.devicePixelRatio);
 
 let loadedModel;
 let mixer;
